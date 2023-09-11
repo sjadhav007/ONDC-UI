@@ -12,27 +12,27 @@
           <form (ngSubmit)="onSubmit()" [formGroup]="registrationForm" class="custom-form" id="cusform">
             <div class="mb-2 has-validation">
               <label for="NameOfSeller" class="form-label headingLable">Name Of Seller<span class="required"> *</span></label>
-              <input type="text" placeholder="name" class="form-control" id="NameOfSeller" aria-describedby="NameOfSeller" [(ngModel)]="user.NameOfSeller" required>
+              <input type="text" placeholder="name" class="form-control" id="NameOfSeller" aria-describedby="NameOfSeller" required>
               <div class="invalid-feedback">
                 Please choose a username.
               </div>
             </div>
             <div class="mb-2">
               <label for="NameOfCompany" class="form-label headingLable">Name Of Company<span class="required" > *</span></label>
-              <input type="text" placeholder="Archents it pvt ltd" class="form-control" formControlName="NameOfCompany" id="NameOfCompany" [(ngModel)]="user.NameOfCompany" required>
+              <input type="text" placeholder="Archents it pvt ltd" class="form-control" formControlName="NameOfCompany" id="NameOfCompany"required>
             </div>
             <div class="mb-2">
               <label for="email" class="form-label headingLable">Email<span class="required">*</span></label>
-              <input type="email" class="form-control" placeholder="example@email.com" formControlName="email" id="email" [(ngModel)]="user.email" required>
+              <input type="email" class="form-control" placeholder="example@email.com" formControlName="email" id="email" required>
             </div>
             <div class="mb-2">
               <label for="phone" class="form-label headingLable">Phone<span class="required">*</span></label>
-              <input type="tel" placeholder="1234567890" class="form-control" formControlName="phone" id="phone" class="form-control" id="phone" [(ngModel)]="user.phone" required>
+              <input type="tel" placeholder="1234567890" class="form-control" formControlName="phone" id="phone" class="form-control" id="phone" required>
             </div>
             <div class="row">
               <div class="col-5">
                 <label for="otp" class="form-label headingLable">OTP</label>
-                <input type="text" placeholder="123456" class="form-control" id="otp" [(ngModel)]="otp" required>
+                <input type="text" placeholder="123456" class="form-control" id="otp" required>
               </div>
                 <div class="col-3 mt-3 d-flex align-items-center">
                 <button type="button" class="btn otpbtn" (click)="getOtp(user.phone)">Get OTP</button>
