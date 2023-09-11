@@ -1,0 +1,151 @@
+@import "src/scss/_variables";
+
+.leftBanner,.rightBanner{
+background-color: $primary-color;
+}
+.buttonRegister{
+    background-color: $Orange-100;
+    font-size: 12px;
+    color: $gray-50;
+    line-height: 13px;
+    padding: 13px 20px 13px 20px;
+    font-weight: 600;
+    font-family: $Roboto-bold;
+}
+.headingLable{
+    color: #000;
+font-size: 12px;
+font-family:$Roboto-bold;
+line-height: 22.667px;
+text-transform: capitalize;
+}
+.form-control[type='text'],.form-control[type='password']{
+height: 35px;
+align-items: center;
+border-radius: 5.333px;
+border: 1.333px solid $neutral-gray-300;
+background: $shades-white;
+color: $neutral-gray-400;
+font-size: 12px;
+font-family: $Roboto-regular;
+line-height: 12px;
+}
+.nav-link{
+    color:$blue-600;
+font-size: 12px;
+font-family: $Roboto-bold;
+line-height: 22.667px;
+}
+
+.link, .register {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+}
+.form-check-label.signUp{
+    color: $gray-900;
+font-size: 18.667px;
+font-family:$Roboto-regular;
+line-height: 22.667px;
+}
+.form-check-label.signUp a{
+    color: $blue-300;
+    text-decoration: none;
+}
+.carousel-indicators button{
+    width: 66px;
+    background-color: $red-300;
+}
+.carousel-img{
+    max-width: 506.25px;
+    max-height: 464px;
+}
+
+.eyeicon {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.error-message,.required{
+    color: red;
+}
+
+
+.para-details{
+    color: #BFBEBE;
+    font-size: 11px;
+    color: $Roboto-bold;
+    margin-bottom: 0px; 
+}
+
+.heading{
+    padding-bottom: 20px;
+}
+.logo{
+padding-bottom: 60px;
+}
+
+.custom-form{
+    padding-bottom: 50px;
+}
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .resendOtp{
+    cursor: pointer;
+    margin-left: 5px; /* Add margin to separate the link from the button */
+    color: rgb(69, 69, 116); /* You can change the link color */
+    text-decoration: none; 
+    font-family:$Roboto-regular;
+  }
+  
+  .resend-link:hover {
+    color: #BFBEBE; /* Remove underline on hover */
+  }
+
+  .reset{
+    width: 99px;
+    height: 36px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: #000;
+    background-color: #e5e5e5;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+
+  .submit{
+    width: 99px;
+    height: 36px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: #ffffff;
+    /* UI Properties */
+    background: transparent linear-gradient(180deg, #F8864E 0%, #F04242 100%);
+    border-radius: 5px;
+    opacity: 1;
+  }
+  .otpbtn{
+    background: #FFBB00 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: #ffffff;
+    height: 34px;
+    margin-top: 12px;
+  }
+  

@@ -1,0 +1,90 @@
+@import "src/scss/_variables";
+
+.leftBanner,.rightBanner{
+background-color: $orange-900;
+}
+.buttonLogin{
+    background-color: $orange-300;
+    font-size: 12px;
+    color: $gray-50;
+    line-height: 13px;
+    padding: 13px 20px 13px 20px;
+    font-weight: 600;
+    font-family: $Roboto-regular;
+}
+.headingLable{
+    color: #000;
+font-size: 12px;
+font-family:$Roboto-bold;
+line-height: 22.667px;
+text-transform: capitalize;
+}
+.form-control[type='text'],.form-control[type='password']{
+height: 35px;
+align-items: center;
+border-radius: 5.333px;
+border: 1.333px solid $neutral-gray-300;
+background: $shades-white;
+color: $primaryDark;
+font-size: 12px;
+font-family: $Roboto-regular;
+line-height: 12px;
+}
+
+.nav-link{
+    color:$blue-600;
+font-size: 12px;
+font-family: $Roboto-bold;
+line-height: 22.667px;
+}
+
+.link, .register {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+}
+.form-check-label.signUp{
+    color: $gray-900;
+font-size: 18.667px;
+font-family:$Roboto-regular;
+line-height: 22.667px;
+}
+
+.form-check-label.signUp a{
+    color: $blue-300;
+    text-decoration: none;
+}
+
+.carousel-img{
+    max-width: 506.25px;
+    max-height: 464px;
+}
+
+.eyeicon {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.error-message,.required{
+    color: red;
+}
+
+
+.para-details{
+    color: #BFBEBE;
+    font-size: 10px;
+    color: $Roboto-bold; 
+}
+
+.heading{
+    padding-bottom: 20px;
+}
+
+.logo{
+padding-bottom: 60px;
+}
+
+.custom-form{
+    padding-bottom: 50px;
+}

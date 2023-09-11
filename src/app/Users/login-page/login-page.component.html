@@ -1,0 +1,89 @@
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-5 d-flex"> 
+        <div class="container w-75 my-auto align-items-center">
+            <div class="logo">
+                <img src="./assets/Logo/archents_logo.png" height="40" width="115">
+            </div>
+        <div class="heading">
+            
+            <div class="heading-5">
+                <h5>Login</h5>
+            </div>
+            <div class="para-details">
+                <p>Welcome to Docisn ONDC, Please fill your details..</p>
+            </div>
+        </div>
+                   
+               
+              <form [formGroup]="loginForm" class="custom-form" id="cusform">
+                <div class="mb-2">
+                    <label for="email-adress" class="form-label headingLable" id="email-label">
+                      User ID<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="email-adress" 
+                    placeholder="email / phone number" formControlName="email" minlength="6"
+                    maxlength="40">
+                    <div *ngIf="f['email'].errors && (f['email'].dirty || f['email'].touched)" 
+                    class="error-message" id="email_errors">
+                      <div *ngIf="f['email'].errors['required']" id="email_rqd_err">
+                        Email ID cannot be blank</div>
+                      <div *ngIf="f['email'].errors['pattern']" id="email_pattern_err">
+                        Please Enter Valid Email</div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label for="password" class="form-label headingLable">Password
+                      <span class="required">*</span></label>
+                    <div style="position: relative;" id="pwd-div">
+                    <input [type]="hide ? 'password' : 'text'" class="form-control" id="password" 
+                    placeholder="Enter Password" formControlName="password">
+                    <mat-icon class="visibility-icon eyeicon" id="v-icon" (click)="myFunction()">
+                      {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </div>
+                    <div *ngIf="f['password'].errors && (f['password'].dirty || f['password'].touched)" 
+                    class="error-message" id="pswd_errors">
+                      <div *ngIf="f['password'].errors['required']" id="pswd_rqd_err">
+                        Please Enter Password</div>
+                    </div>
+                  </div>
+                  <div class="mb-4 d-flex">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="passwordRemember">
+                        <label class="form-check-label headingLable" for="passwordRemember">
+                        Remember Password
+                        </label>
+                    </div>
+                    <div class="ms-auto">
+                        <a class="nav-link" href="#" target="_blank">Forget password?</a>
+                    </div>
+                  </div>
+                  <div class="d-grid mb-4">
+                    <button class="btn buttonLogin btn-primary border-0" 
+                    id="buttonLogin" type="button"[disabled]="loginForm.invalid" (click)="login()">
+                    Log In</button>
+                  </div>
+
+                  <div class="register">
+                    <p >I am a new user.<a class="link text-decoration-none" href="register"> Register here</a>.</p>
+                  </div>
+                  <!-- <div class="d-grid mb-2">
+                    <label class="form-check-label signUp" >
+                        Don’t have an account ? <a href="#">Sign Up</a>
+                    </label>
+                    
+                </div> -->
+              </form>
+            </div>  
+        </div>
+        <div class="col-7  leftBanner">
+                    <div class="h-100 d-flex align-items-center">
+                      <img src="./assets/images/login_img.png" class="d-block w-75 m-auto carousel-img"
+                      alt="...">
+                     </div>
+        </div>
+      
+        <!-- <div class="col-1 d-flex justify-content-end p-0">
+            <div class="rightBanner w-25 h-100"></div>
+        </div> -->
+    </div>
+</div>

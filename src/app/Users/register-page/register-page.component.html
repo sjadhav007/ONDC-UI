@@ -1,0 +1,174 @@
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-6 d-flex"> 
+        <div class="container w-75 my-auto align-items-center">
+            <div class="logo">
+                <img src="./assets/Logo/archents_logo.png" height="40" width="115">
+            </div>
+        <div class="heading">
+                <h5>Register</h5>            
+        </div>
+                   
+          <form (ngSubmit)="onSubmit()" [formGroup]="registrationForm" class="custom-form" id="cusform">
+            <div class="mb-2 has-validation">
+              <label for="NameOfSeller" class="form-label headingLable">Name Of Seller<span class="required"> *</span></label>
+              <input type="text" placeholder="name" class="form-control" id="NameOfSeller" aria-describedby="NameOfSeller" [(ngModel)]="user.NameOfSeller" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+            <div class="mb-2">
+              <label for="NameOfCompany" class="form-label headingLable">Name Of Company<span class="required" > *</span></label>
+              <input type="text" placeholder="Archents it pvt ltd" class="form-control" formControlName="NameOfCompany" id="NameOfCompany" [(ngModel)]="user.NameOfCompany" required>
+            </div>
+            <div class="mb-2">
+              <label for="email" class="form-label headingLable">Email<span class="required">*</span></label>
+              <input type="email" class="form-control" placeholder="example@email.com" formControlName="email" id="email" [(ngModel)]="user.email" required>
+            </div>
+            <div class="mb-2">
+              <label for="phone" class="form-label headingLable">Phone<span class="required">*</span></label>
+              <input type="tel" placeholder="1234567890" class="form-control" formControlName="phone" id="phone" class="form-control" id="phone" [(ngModel)]="user.phone" required>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label for="otp" class="form-label headingLable">OTP</label>
+                <input type="text" placeholder="123456" class="form-control" id="otp" [(ngModel)]="otp" required>
+              </div>
+                <div class="col-3 mt-3 d-flex align-items-center">
+                <button type="button" class="btn otpbtn" (click)="getOtp(user.phone)">Get OTP</button>
+                </div>
+                <div class="col-4  mt-4 d-flex align-items-center">
+                  <p class="para-details">Didn't receive OTP? <a class="text-decoration-none" href="" (click)="resendOtp()">Resend.</a></p>
+                </div>
+            </div>
+                
+              <!-- </div> -->
+            <!-- </div> -->
+            
+            <div class="mt-2 row buttons d-flex">
+            <button type="submit" class="btn  me-2 submit" (click) = "onSubmit()">Submit</button>
+            <button type="reset" class="btn reset" (click) = "resetForm()">Reset</button>
+          </div>
+          </form>
+
+        
+
+
+
+              <!-- <form [formGroup]="registrationForm" class="custom-form" id="cusform">
+                
+                <div class="mb-2">
+                    <label for="NameOfSeller" class="form-label headingLable">Name Of Seller
+                      <span class="required">*</span></label>
+                    <div style="position: relative;" id="nos-div">
+                    <input type="text" class="form-control" id="NameOfSeller" 
+                    placeholder="Enter Seller name" formControlName="NameOfSeller">
+                    <div *ngIf="f['NameOfSeller'].errors && (f['NameOfSeller'].dirty || f['NameOfSeller'].touched)" 
+                    class="error-message" id="nos_errors">
+                      <div *ngIf="f['NameOfSeller'].errors['required']" id="nos_rqd_err">
+                        Please Enter Seller name</div>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="mb-2">
+                    <label for="NameOfCompany" class="form-label headingLable">Name Of Company
+                      <span class="required">*</span></label>
+                    <div style="position: relative;" id="noc-div">
+                    <input type="text" class="form-control" id="NameOfCompany" 
+                    placeholder="Enter Company name" formControlName="NameOfCompany">
+                    <div *ngIf="f['NameOfCompany'].errors && (f['NameOfCompany'].dirty || f['NameOfCompany'].touched)" 
+                    class="error-message" id="nos_errors">
+                      <div *ngIf="f['NameOfCompany'].errors['required']" id="noc_rqd_err">
+                        Please Enter Company name</div>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="mb-2">
+                    <label for="email-adress" class="form-label headingLable" id="email-label">
+                      Email ID<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="email-adress" 
+                    placeholder="name@example.email" formControlName="email" minlength="6"
+                    maxlength="40">
+                    <div *ngIf="f['email'].errors && (f['email'].dirty || f['email'].touched)" 
+                    class="error-message" id="email_errors">
+                      <div *ngIf="f['email'].errors['required']" id="email_rqd_err">
+                        Email ID cannot be blank</div>
+                      <div *ngIf="f['email'].errors['pattern']" id="email_pattern_err">
+                        Please Enter Valid Email</div>
+                    </div>
+                </div>
+
+
+                <div class="mb-2">
+                    <label for="phone" class="form-label headingLable" id="phone-label">
+                      Phone<span class="required">*</span></label>
+                    <input type="text" class="form-control" id="phone" 
+                    placeholder="1234567890" formControlName="phone" minlength="10"
+                    maxlength="10">
+                    <div *ngIf="f['phone'].errors && (f['phone'].dirty || f['phone'].touched)" 
+                    class="error-message" id="phone_errors">
+                      <div *ngIf="f['phone'].errors['required']" id="phone_rqd_err">
+                        Phone cannot be blank</div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+              <label for="otp" class="form-label headingLable col-2" id="otp-label">
+                OTP<span class="required">*</span></label>
+              <input type="text" class="form-control col-2" id="otp" 
+              placeholder="123456" formControlName="otp" minlength="6"
+              maxlength="6">
+              <div *ngIf="f['otp'].errors && (f['otp'].dirty || f['otp'].touched)" 
+              class="error-message" id="otp_errors">
+                <div *ngIf="f['otp'].errors['required']" id="otp_rqd_err">
+                  please verify OTP first..
+                </div>
+              </div>
+
+            </div>
+
+                  <div class="row-2">
+                    <div class="col-xs-6 text-left">
+                      <div class="previous">
+                        <button class="btn buttonLogin btn-primary border-0" 
+                        id="buttonRegister" type="button"[disabled]="registrationForm.invalid" (click)="register()">
+                        Submit</button>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <div class="next">
+                        <button class="btn buttonLogin btn-primary border-0" 
+                        id="buttonRegister" type="button"[disabled]="registrationForm.invalid" (click)="register()">
+                        Reset</button>
+                    </div>
+                  </div>
+                  </div>
+
+                  
+
+                  <div class="register">
+                    <p >Already a user?<a class="link text-decoration-none" href="login"> Sign In</a>.</p>
+                  </div>
+                  <div class="d-grid mb-2">
+                    <label class="form-check-label signUp" >
+                        Don’t have an account ? <a href="#">Sign Up</a>
+                    </label>
+                    
+                </div> 
+              </form> -->
+            </div>  
+        </div>
+        <div class="col-6  leftBanner">
+                    <div class="h-100 d-flex align-items-center">
+                      <img src="./assets/images/login_img.png" class="d-block w-75 m-auto carousel-img"
+                      alt="...">
+                     </div>
+        </div>
+      
+        <!-- <div class="col-1 d-flex justify-content-end p-0">
+            <div class="rightBanner w-25 h-100"></div>
+        </div> -->
+    </div>
+</div>
