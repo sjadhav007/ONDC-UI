@@ -4,9 +4,11 @@ import { RegisterPageComponent } from './Users/register-page/register-page.compo
 import { LoginPageComponent } from './Users/login-page/login-page.component';
 
 const routes: Routes = [
-  {path: 'login', component: LoginPageComponent},
-  {path: '', redirectTo:'login', pathMatch:'full'},
-  {path: 'register', component: RegisterPageComponent  }
+  { path: '', redirectTo: 'user', pathMatch: 'full' },
+  { path: 'user', loadChildren: () => import('./Modules/user/user.module').then(m => m.UserModule) },
+  {
+    path: 'dashboard', loadChildren: () => import('./Modules/dashboard/dashboard.module').then(m => m.DashboardModule),
+  },
 ];
 
 @NgModule({
