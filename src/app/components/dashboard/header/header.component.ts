@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   showTab: number =1;
+  constructor(private router:Router){
+
+  }
   addProduct(){
     
   }
@@ -17,24 +21,28 @@ export class HeaderComponent {
     this.showTab = 2; 
   } 
   orderManagement() {
-
+    this.showTab = 3; 
    } 
   salesTrackingAndReports() {
-
+    this.showTab = 4; 
    } 
   inventoryManagememnt() { 
-
+    this.showTab = 5; 
   } 
   customerInteractions() { 
-
+    this.showTab = 6;
   } 
   paymentCollection() { 
-
+    this.showTab = 7;
   } 
   vendorMarketPlace() {
-
+    this.showTab = 8;
    } 
   promotions() {
+    this.showTab = 9;
+   }
 
+   notifications(){
+    this.router.navigate(['/'])
    }
 }
