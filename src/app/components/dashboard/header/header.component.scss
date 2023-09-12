@@ -35,6 +35,19 @@
     color: #FFFFFF;
     opacity: 1;
 }
+.searchform{
+    position: relative;
+}
+.search_icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+}
+.search{
+    border-radius: 20px !important;
+}
 
 .borderleft {
     border-left: 1px solid #DCDCDC !important;
