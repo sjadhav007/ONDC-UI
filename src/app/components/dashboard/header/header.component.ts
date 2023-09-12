@@ -37,6 +37,4 @@ export class HeaderComponent {
   promotions() {
 
    }
-
-
 }
