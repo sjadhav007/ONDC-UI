@@ -66,6 +66,27 @@
     height: 15px;
     cursor: pointer;
 }
+.dropdown-menu{
+    background-color: #fff;
+    width: 25%;
+    margin-top: 12px !important;
+    margin-left: 20px !important;
+    padding: 0px !important;
+}
+.dropdown-img{
+    width: 30px;
+    height: 30px;
+}
+.profile{
+    padding: 5px 15px;
+    border-bottom: 1px solid #00000029;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto";
+    letter-spacing: 0px;
+    color: #6A6767;
+    opacity: 1;
+}
 
 .navbar {
     overflow: hidden;
