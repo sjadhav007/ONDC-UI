@@ -38,10 +38,11 @@ font-family: $Roboto-bold;
 line-height: 22.667px;
 }
 
-.link, .register {
+.link {
     text-align: center;
     font-family: Roboto;
     font-size: 12px;
+    cursor: pointer;
 }
 .form-check-label.signUp{
     color: $gray-900;
