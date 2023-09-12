@@ -1,1 +1,21 @@
-kabkjabcjabdcjabwj
+<div class="navbar p-0">
+    <div class="d-flex headings-div">
+        <div class="header-text"(click)="dashboard()">Dashboard</div>
+        <div class="header-text"  [class.active]="showTab==2" (click)="productionManagement()" data-bs-toggle="dropdown">Product Management
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="header-text" (click)="orderManagement()">Order Management</div>
+        <div class="header-text" (click)="salesTrackingAndReports()">Sales Tracking and Reports</div>
+        <div class="header-text" (click)="inventoryManagememnt()">Inventory Management</div>
+        <div class="header-text" (click)="customerInteractions()">Customer Interactions</div>
+        <div class="header-text" (click)="paymentCollection()">Payment Collection</div>
+        <div class="header-text" (click)="vendorMarketPlace()">Vendor MarketPlace</div>
+        <div class="header-text" (click)="promotions()">Promotions</div>
+    </div>
+</div>
