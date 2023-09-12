@@ -1,0 +1,17 @@
+.totalContainer {
+    width: 100%;
+    // padding-top: 65px;
+    height: auto;
+}
+
+.mainContent {
+
+    height: auto;
+    // width: 100%;
+    width: calc(100% - 60px);
+    padding: 0px;
+    padding-top: 55px;
+    //  padding-left: 60px;
+    left: 60px !important;
+    position: absolute;
+}

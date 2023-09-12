@@ -1,1 +1,54 @@
-kabkjabcjabdcjabwj
+<div class="header">
+    <div class="row header-div">
+        <div class="d-flex col-lg-9 col-md-9 col-sm-12 row">
+            <div class="col-2">
+                <img class="logo" src="./assets/Logo/archents_logo.png">
+            </div>
+            <div class="col-3 d-flex  mt-1">
+                <button class="addproduct" (click)="addProduct()">
+                    <img class="plus" src="./assets/images/plus-icon.png">
+                    <span class="add ms-1">Add Product</span>
+                </button>
+            </div>
+            <div class="col-6">
+
+            </div>
+            <div class="col-1 d-flex justify-content-end mt-1">
+                <img class="plus mt-2" src="../../../../assets/images/notification-icon.png">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <div class="d-flex justify-content-between">
+                <div class="borderleft">
+                    <div class="profilesec">
+                        <div id="4415" class="d-flex">
+                            <div class="user-pic mt-1 me-2" id="u-pic">
+                                <img id="profile" src="../../../../assets/images/profile-img.png">
+                            </div>
+                            <div class="user-details" id="u-detais">
+                                <p class="mb-0 user-name" id="doctor-name">Saritha Sunkari </p>
+                                <p class="mb-0 user-spec" id="speciality"> Sr.Supervisor </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="dropdown" src="../../../../assets/images/dropdown-icon.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="navbar p-0">
+    <div class="d-flex headings-div">
+        <div class="header-text" (click)="dashboard()">Dashboard</div>
+        <div class="header-text" [class.active]="showTab==2" (click)="productManagement()">Product Management</div>
+        <div class="header-text" (click)="orderManagement()">Order Management</div>
+        <div class="header-text" (click)="salesTrackingAndReports()">Sales Tracking and Reports</div>
+        <div class="header-text" (click)="inventoryManagememnt()">Inventory Management</div>
+        <div class="header-text" (click)="customerInteractions()">Customer Interactions</div>
+        <div class="header-text" (click)="paymentCollection()">Payment Collection</div>
+        <div class="header-text" (click)="vendorMarketPlace()">Vendor MarketPlace</div>
+        <div class="header-text" (click)="promotions()">Promotions</div>
+    </div>
+</div>
