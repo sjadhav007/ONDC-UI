@@ -9,10 +9,10 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   showTab: number =1;
   constructor(private router:Router){
-
+    
   }
   addProduct(){
-    
+    this.router.navigate(['/dashboard/addProduct'])
   }
   dashboard() {
     this.showTab = 1; 
