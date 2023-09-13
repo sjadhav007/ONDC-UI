@@ -7,6 +7,7 @@ import { HeaderComponent } from 'src/app/components/dashboard/header/header.comp
 import { AddProductComponent } from 'src/app/components/dashboard/add-product/add-product.component';
 import { MaterialModule } from '../material.module';
 import { NotificationsComponent } from 'src/app/components/dashboard/notifications/notifications.component';
+import { HomeComponent } from 'src/app/components/dashboard/home/home.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NotificationsComponent } from 'src/app/components/dashboard/notificatio
     DashboardComponent,  
     HeaderComponent,
     AddProductComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    HomeComponent,
   ],
   imports: [
     CommonModule,
