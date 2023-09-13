@@ -2,3 +2,43 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.required{
+    color: red;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+.error-message{
+    color: red;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+option{
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+.form-select{
+    font-size: 12px !important;
+    font-family: 'Roboto';
+}
+label{
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.submit-btn{
+    color: #fff;
+    background: transparent linear-gradient(180deg, #F8864E 0%, #F04242 100%);
+    border-radius: 5px;
+    opacity: 1;
+    font-size: 12px;
+}
+.discard-btn{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    opacity: 1;
+    font-size: 12px;
+}
