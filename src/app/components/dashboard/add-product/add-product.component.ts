@@ -10,6 +10,7 @@ import * as moment from 'moment';
 export class AddProductComponent implements OnInit{
  addProductForm:FormGroup;
  todayDate=moment(new Date()).format('DD/MM/YYYY');
+ imageArray :any= [];
 
 
  constructor(private fb:FormBuilder){
@@ -26,17 +27,35 @@ export class AddProductComponent implements OnInit{
 
   });
 
-  const fileInput = document.getElementById('file-input');
-  if (fileInput) {
-      fileInput.addEventListener('click', function() {
-          // Trigger the file input click event when the link is clicked
-          fileInput.click();
-      });   
- }
+//   const fileInput = document.getElementById('file-input');
+
+//   if (fileInput) {
+//     fileInput.addEventListener('click', function() {
+//           // Trigger the file input click event when the link is clicked
+//           fileInput.click();
+//       });   
+//  }
  
 }
  ngOnInit() {
    
+ }
+
+ fileUpload(event:any){
+  debugger
+  let files = event.target.files;
+  let file;
+  for (let i=0; i<files.length ; i++){
+    let reader = new FileReader();
+      file = files [i];
+      reader.onload = (file) => {
+        let base64data = reader.result;
+          if(base64data){
+            this.imageArray[i] = reader.result;
+          }
+      }
+      reader.readAsDataURL(file);
+    }
  }
 
  get p() {

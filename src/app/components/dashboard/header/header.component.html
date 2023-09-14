@@ -1,5 +1,5 @@
 <div class="header">
-    <div class="row header-div">
+    <div class="row header-div m-0 p-0">
         <div class="d-flex col-lg-9 col-md-9 col-sm-12 row">
             <div class="col-3">
                 <img class="logo" src="./assets/Logo/archents_logo.png">
@@ -13,16 +13,15 @@
             <div class="col-2">
 
             </div>
-            <div id="FD6508" class="col-lg-4 col-md-4 col-sm-4 mt-1">
-                <form id="FD17"  class="searchform form-inline d-flex justify-content-center md-form form-sm mt-0">
-                    <!-- <mat-icon class="search_icon">search</mat-icon> -->
-                    <img class="search_icon" src="../../../../assets/images/search.png">
+            <div id="FD6508" class="col-lg-4 col-md-4 col-sm-4 d-flex align-items-center">
+                <form id="FD17"  class="searchform form-inline w-100 d-flex justify-content-center md-form form-sm mt-0">
+                    <img class="search_icon" src="./assets/images/search.png">
                     <input id="FD18" class="form-control border ml-4 w-100 search" type="text" placeholder="Search for Products" 
                         aria-label="Search">
                 </form>
             </div>
             <div class="col-1 d-flex justify-content-end mt-1">
-                <img class="plus mt-2" src="../../../../assets/images/notification-icon.png">
+                <img class="plus mt-2" src="./assets/images/notification-icon.png" (click)="openPopup()">
             </div>
         </div>
         <div class="col-lg-3 col-md-3">
@@ -31,7 +30,7 @@
                     <div class="profilesec">
                         <div id="4415" class="d-flex">
                             <div class="user-pic mt-1 me-2" id="u-pic">
-                                <img id="profile" src="../../../../assets/images/profile-img.png">
+                                <img id="profile" src="./assets/images/profile-img.png">
                             </div>
                             <div class="user-details" id="u-detais">
                                 <p class="mb-0 user-name" id="doctor-name">Saritha Sunkari </p>
@@ -72,17 +71,17 @@
             </div>
         </div>
     </div>
-    <div class="navbar p-0">
-        <div class="d-flex headings-div">
-            <div class="header-text" (click)="dashboard()">Dashboard</div>
-            <div class="header-text" [class.active]="showTab==2" (click)="productManagement()">Product Management</div>
-            <div class="header-text" (click)="orderManagement()">Order Management</div>
-            <div class="header-text" (click)="salesTrackingAndReports()">Sales Tracking and Reports</div>
-            <div class="header-text" (click)="inventoryManagememnt()">Inventory Management</div>
-            <div class="header-text" (click)="customerInteractions()">Customer Interactions</div>
-            <div class="header-text" (click)="paymentCollection()">Payment Collection</div>
-            <div class="header-text" (click)="vendorMarketPlace()">Vendor MarketPlace</div>
-            <div class="header-text" (click)="promotions()">Promotions</div>
-        </div>
+</div>
+<div class="navbar p-0">
+    <div class="d-flex headings-div">
+        <div class="header-text" (click)="dashboard()">Dashboard</div>
+        <div class="header-text" [class.active]="showTab==2" (click)="productManagement()">Product Management</div>
+        <div class="header-text" [class.active]="showTab==3" (click)="orderManagement()">Order Management</div>
+        <div class="header-text" [class.active]="showTab==4" (click)="salesTrackingAndReports()">Sales Tracking and Reports</div>
+        <div class="header-text" [class.active]="showTab==5" (click)="inventoryManagememnt()">Inventory Management</div>
+        <div class="header-text" [class.active]="showTab==6" (click)="customerInteractions()">Customer Interactions</div>
+        <div class="header-text" [class.active]="showTab==7" (click)="paymentCollection()">Payment Collection</div>
+        <div class="header-text" [class.active]="showTab==8" (click)="vendorMarketPlace()">Vendor MarketPlace</div>
+        <div class="header-text" [class.active]="showTab==9" (click)="promotions()">Promotions</div>
     </div>
 </div>

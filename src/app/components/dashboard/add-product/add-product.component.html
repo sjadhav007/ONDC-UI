@@ -1,4 +1,5 @@
-<div class="heading mt-2">Add Product</div>
+<div class="container-fluid">
+    <div class="heading mt-2">Add Product</div>
 <div class="addproduct">
     <form [formGroup]="addProductForm">
         <div class="row p-3">
@@ -83,19 +84,40 @@
             <div class="col-lg-4 col-md-3">
                 <label class="form-label">Product Images</label>
                 <div class="add-images">
-                    <div class="d-flex justify-content-center">
-                        <img class="add-image" src="./assets/images/add-images.png" id="">
+                    <div class="d-flex justify-content-center" >
+                        <label for="file-input"  class="">
+                            <img for="file-input" class="add-image" src="./assets/images/add-images.png" >
+                        </label>
                     </div>
                     <p class="image-text">Drag & Drop your product images here or 
                         <label for="file-input"  class="browse">click to browse</label>
                     </p>
-                    <input type="file" id="file-input" style="display: none;">
+                    <input
+                      type="file" multiple
+                      #fileInput
+                      name="file-upload"
+                      id="file-input"
+                      accept="pdf, image/jpeg"
+                      (change)="fileUpload($event)"
+                      hidden
+                      class="form-control form-control-sm matInput"
+                      required
+                    />
+                </div>
+                <div class="imagesControl mb-4 mt-3">
+                    <ng-container *ngFor="let imageurl of imageArray">
+                        <div class="image-box m-2">
+                            <img class="select-image" src="{{imageurl}}" />
+                        </div>
+                    </ng-container>
                 </div>
                 <div class="">
-                    <button class="btn submit-btn">Submit</button>
-                    <button class="btn discard-btn">Discard</button>
+                    <button class="btn submit-btn me-2">Submit</button>
+                    <button class="btn cancel-btn">Cancel</button>
                 </div>
             </div>
         </div>
     </form>
 </div>
+</div>
+

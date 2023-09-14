@@ -8,14 +8,16 @@ import { MaterialModule } from '../material.module';
 import { NotificationsComponent } from 'src/app/components/dashboard/notifications/notifications.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddProductComponent } from 'src/app/components/dashboard/add-product/add-product.component';
+import { HomeComponent } from 'src/app/components/dashboard/home/home.component';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,  
     HeaderComponent,
+    AddProductComponent,
     NotificationsComponent,
-    AddProductComponent
+    HomeComponent,
   ],
   imports: [
     CommonModule,

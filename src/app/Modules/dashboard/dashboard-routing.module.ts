@@ -3,13 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { HeaderComponent } from 'src/app/components/dashboard/header/header.component';
 import { AddProductComponent } from 'src/app/components/dashboard/add-product/add-product.component';
+import { HomeComponent } from 'src/app/components/dashboard/home/home.component';
 
 const routes: Routes = [
   {
     path: '', component: DashboardComponent,
     children: [
       { path: 'header', component: HeaderComponent },
-      {path :'addProduct', component:AddProductComponent}
+      {path :'addProduct', component:AddProductComponent},
+      {path: 'home', component:HomeComponent}
     ]
     }
 ];

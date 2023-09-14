@@ -8,8 +8,8 @@
     box-shadow: 0px 2px 23px #E5E5E5;
     opacity: 1;
     width: 1300px;
-    height: auto;
-    margin: 10px;
+    height: 410px;
+    margin: 30px 10px;
 }
 .add-images{
     background: #FFFFFF;
@@ -33,4 +33,16 @@
 .browse{
     color: #0071FF;
     cursor: pointer;
+}
+.image-box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #dcdcdc;
+}
+.select-image{
+    width: 98px;
+    height: 98px;
+}
+.imagesControl {
+    display: flex !important;
 }
