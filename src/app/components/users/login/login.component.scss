@@ -38,16 +38,17 @@ font-family: $Roboto-bold;
 line-height: 22.667px;
 }
 
-.link, .register {
+.link {
     text-align: center;
     font-family: Roboto;
     font-size: 12px;
+    cursor: pointer;
 }
 .form-check-label.signUp{
     color: $gray-900;
-font-size: 18.667px;
-font-family:$Roboto-regular;
-line-height: 22.667px;
+    font-size: 18.667px;
+    font-family:$Roboto-regular;
+    line-height: 22.667px;
 }
 
 .form-check-label.signUp a{
@@ -68,6 +69,7 @@ line-height: 22.667px;
 
 .error-message,.required{
     color: red;
+    font-size: 12px;
 }
 
 

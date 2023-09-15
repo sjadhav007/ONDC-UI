@@ -1,0 +1,82 @@
+<div class="sidebarMenu" id="sidemenu" [ngClass]="{ bg1: !collapseSidebar, fc27:!collapseSidebar, fc4:collapseSidebar}">
+    <div id="14993" class="flex-grow-1">
+        <div id="14994" class="d-flex sidebar-div">
+         
+            <div id="14995" class="ds">
+                <button type="button" id="toggle" class="toggleIcon" [class.open]="menucollapse"
+                (click)="toggleFunctionality()">
+                    <span id="bar1" class="icon-bar1 bg3"></span>
+                    <span id="bar2" class="icon-bar2 bg3"></span>
+                    <span id="bar3" class="icon-bar3 bg3"></span>
+                </button>
+            </div>
+            <div id="14996" class="ms">
+                <button type="button" id="m-toggle" class="toggleIcon"  [class.open]="menucollapse">
+                    <span id="bar-1" class="icon-bar bg3"></span>
+                    <span id="bar-2" class="icon-bar bg3"></span>
+                    <span id="bar-3" class="icon-bar bg3"></span>
+                </button>
+            </div>
+               <div class="ondc-text" *ngIf="menucollapse">ONDC-TSP</div>
+        </div>
+    </div>
+    <ul id="sideMenu" class="sideMenuList row">
+        <li class="menuRow col-lg-12 space" style="padding-top: 0px !important;" id="menu-dash"  routerLinkActive="active">
+          <a *ngIf="!dashboardActive" (click)="home()" class="d-flex fs1  tduh text-nowrap" id="dashboard"
+            matTooltip="Dashboard" matTooltipPosition="right" matTooltipClass="sidebar-tooltip"[matTooltipDisabled]="!collapseSidebar">
+            <span> <img id="14997" src="../../../../assets/sidebar-images/dashboard-icon.png" class="iconsize"></span>
+            <span *ngIf="tooltipv" id="dashboard"  class="icontext"  >Dashboard</span>
+          </a>
+    
+          <a (click)="home()" class="d-flex fs1  tduh text-nowrap icon-12-active" *ngIf="dashboardActive"
+            id="dashboard-atag" matTooltip="Dashboard" matTooltipPosition="right" matTooltipClass="sidebar-tooltip"
+            [matTooltipDisabled]="!collapseSidebar">
+            <span> <img id="14998" src="../../../../assets/sidebar-images/dashboard-icon.png" class="iconsizeactive"></span>
+            <span *ngIf="tooltipv" id="dashboard1" class="icontext">Dashboard</span>
+            <span class="ctooltip" id="Dashboard1" *ngIf="!tooltipv">Dashboard</span>
+          </a>
+    
+        </li>
+        <li class="menuRow col-lg-12" id="menu-cal"
+          routerLinkActive="active">
+          <a (click)="product()" *ngIf="!productActive" class="d-flex fs1  tduh text-nowrap " id="calendar"
+            matTooltip="Calendar" matTooltipPosition="right" matTooltipClass="sidebar-tooltip"
+            [matTooltipDisabled]="!collapseSidebar">
+            <span> <img id="14999" src="./assets/sidebar-images/product-icon.png" class="iconsize"></span>
+            <span *ngIf="tooltipv" id="schedule" class="icontext">Product Management</span>
+            <span class="ctooltip" id="Schedules" *ngIf="!tooltipv">Product Management</span>
+          </a>
+    
+    
+          <a (click)="product()" *ngIf="productActive" class="d-flex fs1  tduh text-nowrap icon-11-active"
+            id="calendar-atag" matTooltip="Calendar" matTooltipPosition="right" matTooltipClass="sidebar-tooltip" id="schedules-atag"
+            [matTooltipDisabled]="!collapseSidebar">
+            <span> <img id="15000" src="./assets/sidebar-images/product-icon.png" class="iconsizeactive"></span>
+            <span *ngIf="tooltipv" id="schedule1" class="icontext">Product Management</span>
+            <span class="ctooltip" id="Schedules1" *ngIf="!tooltipv">Product Management</span>
+          </a>
+    
+    
+        </li>
+
+        <li class="menuRow col-lg-12" id="menu-templates"  
+          routerLinkActive="active">
+          <a (click)="orders()" *ngIf="!ordersActive" class="d-flex fs1  tduh text-nowrap" id="templates"
+            matTooltip="Appointments" matTooltipPosition="right" matTooltipClass="sidebar-tooltip"
+            [matTooltipDisabled]="!collapseSidebar">
+            <span> <img id="15003" src="../../../../assets/sidebar-images/orders-icon.png" class="iconsize"></span>
+            <span *ngIf="tooltipv" id="template" class="icontext">Order Management</span>
+            <span *ngIf="!tooltipv" id="Template" class="ctooltip">Template</span>
+        </a>
+    
+          <a (click)="orders()" *ngIf="ordersActive" class="d-flex fs1  tduh text-nowrap icon-templates-active"
+            id="templates-atag" matTooltip="Appointments" matTooltipPosition="right" matTooltipClass="sidebar-tooltip"
+            [matTooltipDisabled]="!collapseSidebar">
+            <span> <img id="15004" src="../../../../assets/sidebar-images/orders-icon.png" class="iconsizeactive"></span>
+            <span *ngIf="tooltipv" id="template1" class="icontext">Order Management</span>
+            <span *ngIf="!tooltipv" id="Template1" class="ctooltip">Template</span>
+    </a>
+    
+        </li> 
+      </ul>
+</div>

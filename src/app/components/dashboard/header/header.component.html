@@ -1,0 +1,89 @@
+<mat-card class="p-0 header-card" id="m-card"  [ngClass]="{'header': collapseSidebar,'header-expand':!collapseSidebar}">
+    <div class="header-div m-0 p-0">
+        <div class="row">
+        <div class="d-flex col-lg-9 col-md-9 col-sm-12 row">
+            <!-- <div class="col-3">
+                <img class="logo" src="./assets/Logo/archents_logo.png">
+            </div> -->
+            <div class="col-2 d-flex align-items-center ps-3">
+                <button class="addproduct" (click)="addProduct()">
+                    <img class="plus" src="./assets/images/plus-icon.png">
+                    <span class="add ms-1">Add Product</span>
+                </button>
+            </div>
+            <div class="col-5">
+
+            </div>
+            <div id="FD6508" class="col-lg-4 col-md-4 col-sm-4 d-flex align-items-center">
+                <form id="FD17"  class="searchform form-inline w-100 d-flex justify-content-center md-form form-sm mt-0">
+                    <img class="search_icon" src="./assets/images/search.png">
+                    <input id="FD18" class="form-control border ml-4 w-100 search" type="text" placeholder="Search for Products" 
+                        aria-label="Search">
+                </form>
+            </div>
+            <div class="col-1 d-flex justify-content-end mt-1">
+                <img class="plus mt-2" src="./assets/images/notification-icon.png" (click)="openPopup()">
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <div class="d-flex justify-content-between">
+                <div class="borderleft">
+                    <div class="profilesec">
+                        <div id="4415" class="d-flex">
+                            <div class="user-pic mt-1 me-2" id="u-pic">
+                                <img id="profile" src="./assets/images/profile-img.png">
+                            </div>
+                            <div class="user-details" id="u-detais">
+                                <p class="mb-0 user-name" id="doctor-name">Saritha Sunkari </p>
+                                <p class="mb-0 user-spec" id="speciality"> Sr.Supervisor </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img class="dropdown" src="../../../../assets/images/dropdown-icon.png" data-bs-toggle="dropdown">
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="d-flex profile">
+                                <img class="dropdown-img" src="./assets/images/profile.png">
+                                <div class="dropdown-item">My Profile</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex profile">
+                                <img class="dropdown-img" src="./assets/images/support.png">
+                                <div class="dropdown-item">Support</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex profile">
+                                <img class="dropdown-img" src="./assets/images/settings.png">
+                                <div class="dropdown-item">Settings</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex p-2">
+                                <img class="dropdown-img" src="./assets/images/logout.png">
+                                <div class="dropdown-item">Logout</div>
+                            </div>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</mat-card>
+<!-- <div class="navbar p-0">
+    <div class="d-flex headings-div">
+        <div class="header-text" (click)="dashboard()">Dashboard</div>
+        <div class="header-text" [class.active]="showTab==2" (click)="productManagement()">Product Management</div>
+        <div class="header-text" [class.active]="showTab==3" (click)="orderManagement()">Order Management</div>
+        <div class="header-text" [class.active]="showTab==4" (click)="salesTrackingAndReports()">Sales Tracking and Reports</div>
+        <div class="header-text" [class.active]="showTab==5" (click)="inventoryManagememnt()">Inventory Management</div>
+        <div class="header-text" [class.active]="showTab==6" (click)="customerInteractions()">Customer Interactions</div>
+        <div class="header-text" [class.active]="showTab==7" (click)="paymentCollection()">Payment Collection</div>
+        <div class="header-text" [class.active]="showTab==8" (click)="vendorMarketPlace()">Vendor MarketPlace</div>
+        <div class="header-text" [class.active]="showTab==9" (click)="promotions()">Promotions</div>
+    </div>
+</div> -->

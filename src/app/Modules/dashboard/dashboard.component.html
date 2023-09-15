@@ -1,0 +1,18 @@
+
+<app-header></app-header>
+  <div class="row">
+      <div class="col-lg-12 col-md-12 padleft">
+      <div class="d-flex flex-container">
+          <div  [ngClass]="{'collapse-sidebar-deskop': !collapseSidebar,'collapse-sidebar-deskop-expand':collapseSidebar, 'collapse-sidebar-sidemenuhide': collapseSideSidebar}">
+              
+              <app-sidebar></app-sidebar>
+          </div>
+          <div [ngClass]="{'mainContent': !collapseSidebar,'mainContent-expand': collapseSidebar}">
+              <div class="dashboardComponents">
+                  <div class="row">
+                      <router-outlet></router-outlet>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>

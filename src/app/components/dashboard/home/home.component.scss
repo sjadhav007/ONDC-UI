@@ -1,0 +1,98 @@
+.screen-heading{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+    margin: 12px 5px;
+
+}
+
+.order-details-card{
+    width: 1306px;
+    height: 145px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 7px 18px #64646430;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.allSales-dtls{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 22px;
+}
+
+.order-dtls-heading{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #B4B4B4;
+    opacity: 1;
+    // margin-top: 15px;
+}
+
+.salescount{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #8B99B9;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.profitLosspercentage{
+    width: 70px;
+    height: 28px;
+    background: #F0FBF6 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+.individual-sales{
+    border-left: 1px solid #E5E5E5;
+    padding-left: 31px;
+    margin-top: 20px;
+}
+
+.recent-sales{
+    margin-top: 20px;
+}
+
+.graph-section{
+    top: 358px;
+    left: 28px;
+    width: 1306px;
+    height: 475px;
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 30px 0px ;
+}
+
+.orders-received-div{
+    top: 384px;
+    left: 54px;
+    width: 797px;
+    height: 424px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 30px;
+}
+
+.orders-cancelled-div {
+    top: 384px;
+    left: 883px;
+    width: 425px;
+    height: 424px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 30px;
+}

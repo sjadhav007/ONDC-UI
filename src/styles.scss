@@ -2,3 +2,51 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.required{
+    color: red;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+.error-message{
+    color: red;
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+option{
+    font-size: 12px;
+    font-family: 'Roboto';
+}
+.form-select{
+    font-size: 12px !important;
+    font-family: 'Roboto';
+}
+label{
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.submit-btn{
+    color: #FFFFFF !important;
+    background: transparent linear-gradient(180deg, #F8864E 0%, #F04242 100%);
+    border-radius: 5px !important;
+    opacity: 1 !important;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    width: 100px;
+}
+.cancel-btn{
+    background:#E5E5E5 !important;
+    border-radius: 5px !important;
+    opacity: 1 !important;
+    font-size: 12px !important;
+    color: #000000 !important;
+    text-transform: uppercase;
+    width: 100px;
+}
+.form-control{
+    font-size: 12px !important;
+    font-family: 'Roboto';
+}

@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login-page',
-  templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class LoginPageComponent implements OnInit{
+export class LoginComponent implements OnInit{
 
   loginForm:FormGroup;
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder,private router:Router) {
     this.loginForm = this.formBuilder.group({
       email:['',[Validators.required, Validators.pattern(/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w[a-z]{1,2})+$/)]],
       password:['',Validators.required]
@@ -28,5 +29,8 @@ export class LoginPageComponent implements OnInit{
   }
   login(){
    
+  }
+  register(){
+    this.router.navigate(['/user/register'])
   }
 }
