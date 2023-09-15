@@ -5,37 +5,37 @@
             <div class="recent-sales">
                 <div class="order-dtls-heading">Recent Sales</div>
                 <div class="salescount">1255</div>
-                <div class="profitLosspercentage">+12%</div>
+                <div class="profitLosspercentage">+12.5%</div>
             </div>
 
             <div class="individual-sales">
                 <div class="order-dtls-heading">Order Received</div>
                 <div class="salescount">1255</div>
-                <div class="profitLosspercentage">+12%</div>
+                <div class="profitLosspercentage">+12.86%</div>
             </div>
 
             <div class="individual-sales">
                 <div class="order-dtls-heading">Order Cancellation Request</div>
                 <div class="salescount">1255</div>
-                <div class="profitLosspercentage">+12%</div>
+                <div class="profitLosspercentage">+12.2%</div>
             </div>
 
             <div class="individual-sales">
                 <div class="order-dtls-heading">Low Stock Notification</div>
                 <div class="salescount">1255</div>
-                <div class="profitLosspercentage">+12%</div>
+                <div class="profitLosspercentage">+12.73%</div>
             </div>
 
             <div class="individual-sales">
                 <div class="order-dtls-heading">Average of Orders Returns</div>
                 <div class="salescount">1255</div>
-                <div class="profitLosspercentage">+12%</div>
+                <div class="profitLosspercentage">+12.66%</div>
             </div>
 
             <div class="individual-sales">
                 <div class="order-dtls-heading">Orders in Process</div>
                 <div class="salescount">1255</div>
-                <div class="profitLosspercentage">+12%</div>
+                <div class="profitLosspercentage">+12.4%</div>
             </div>
 
             <!-- <div class="individual-sales">
@@ -49,10 +49,111 @@
     <div class="graph-section">
         <div class="row">
             <div class="col-lg-8 col-md-8 orders-received-div">
-
+                <div class="subHead">Orders Received</div>
             </div>
             <div class="col-lg-4 col-md-4 orders-cancelled-div">
-                
+                <div class="subHead">Orders Cancelled</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-1">
+        <div class="col-lg-8 col-md-8 recent-orders-data">
+            <div class="row d-flex">
+                <div class="col-lg-6 col-md-6 subHead">Recent Orders</div>
+                <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                    <button class="btn viewproductsbtn" type="button">View Products</button>
+                </div>
+            </div>
+            <div class="labels row">
+               <div class="col-1"></div>
+               <div class="col-2 labels-head">Product Id</div>
+               <div class="col-2 labels-head">Product Name</div>
+               <div class="col-3 labels-head">Product Category</div>
+               <div class="col-2 labels-head">price</div>
+               <div class="col-2 labels-head">status</div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-1">
+                    <img src="./assets/images/profile-img.png" class="product-img">
+                </div>
+                <div class="col-2 product-id">#1233645</div>
+                <div class="col-2 product-name">Product Name</div>
+                <div class="col-3 product-category">Product Category</div>
+                <div class="col-2 product-price">price</div>
+                <div class="col-2">
+                    <div class="order-status mt-1">delivered</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 customer-reviews-div">
+            <div class="row d-flex">
+                <div class="col-lg-6 col-md-6 subHead">Customer Reviews</div>
+                <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                    <img src="./assets/images/filter-img.png" class="filter-img">
+                    <span class="subHead">View Filters</span>
+                    <img src="./assets/images/dropdown-icon.png" class="dropdown-icon">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img src="./assets/images/Star-img.png" class="start-img">
+                    <img src="./assets/images/Star-img.png" class="start-img">
+                    <img src="./assets/images/Star-img.png" class="start-img">
+                    <img src="./assets/images/Star-img.png" class="start-img">
+                    <img src="./assets/images/Star-img.png" class="start-img">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="ratingnumber" id="ratingnumber">4 <span class="rating5">/ 5</span>
+                </div>
+            </div>
+            <div class="rating-info">Overall rating of 100 customer's reviews</div>
+            <div class="ratings-bar-div">
+                <div class="rating row">
+                    <div class="col-4 rating-status">Excellent</div>
+                    <div class="col-8">
+                        <div class="progress">
+                            <div class="progress-bar excellent-bar" role="progressbar" style="width: 25%"  aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating row">
+                    <div class="col-4 rating-status">Good</div>
+                    <div class="col-8 ">
+                        <div class="progress">
+                            <div class="progress-bar good-bar" role="progressbar" style="width: 35%"  aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating row">
+                    <div class="col-4 rating-status">Average</div>
+                    <div class="col-8">
+                        <div class="progress">
+                            <div class="progress-bar avg-bar" role="progressbar" style="width: 55%"  aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating row">
+                    <div class="col-4 rating-status">Below Average</div>
+                    <div class="col-8">
+                        <div class="progress">
+                            <div class="progress-bar below-avg-bar" role="progressbar" style="width: 75%"  aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating row">
+                    <div class="col-4 rating-status">Poor</div>
+                    <div class="col-8">
+                        <div class="progress">
+                            <div class="progress-bar poor-bar" role="progressbar" style="width: 10%"  aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mt-4">
+                <button class="btn all-reviews-btn" type="button">See all customer's review</button>
             </div>
         </div>
     </div>

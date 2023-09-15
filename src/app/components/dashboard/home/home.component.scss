@@ -13,7 +13,7 @@
 .order-details-card{
     width: 1306px;
     height: 145px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     box-shadow: 0px 7px 18px #64646430;
     border-radius: 10px;
     opacity: 1;
@@ -48,10 +48,17 @@
 .profitLosspercentage{
     width: 70px;
     height: 28px;
-    background: #F0FBF6 0% 0% no-repeat padding-box;
+    background: #F0FBF6;
     border-radius: 50px;
     opacity: 1;
     margin-top: 15px;
+    // font: normal normal normal 12px/24px Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #30B558;
 }
 
 .individual-sales{
@@ -65,34 +72,208 @@
 }
 
 .graph-section{
-    top: 358px;
-    left: 28px;
     width: 1306px;
     height: 475px;
-    background: #F2F2F2 0% 0% no-repeat padding-box;
+    background: #F2F2F2;
     border-radius: 10px;
     opacity: 1;
     margin: 30px 0px ;
 }
 
 .orders-received-div{
-    top: 384px;
-    left: 54px;
-    width: 797px;
+    width: 790px;
     height: 424px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     border-radius: 10px;
     opacity: 1;
     margin: 30px;
 }
 
 .orders-cancelled-div {
-    top: 384px;
-    left: 883px;
-    width: 425px;
+   
+    width: 348px;
     height: 424px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     border-radius: 10px;
     opacity: 1;
     margin: 30px;
+}
+
+.recent-orders-data{
+    width: 804px;
+    height: 444px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px #00000029;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.subHead{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.viewproductsbtn{
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;    
+    height: 30px;
+    background: #E5E5E5;
+    border: none;
+}
+
+.customer-reviews-div {
+    width: 378px;
+    height: 444px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px #00000029;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+.filter-img{
+    width: 16px;
+    height: 16px;
+    margin: 8px;
+}
+.dropdown-icon{
+    width: 12px;
+    height: 8px;
+    margin: 12px;
+}
+.labels-head{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.product-img{
+    border: 1px solid #CDCED1;
+    border-radius: 5px;
+    opacity: 1;
+    width: 50px;
+    height: 33px;
+}
+
+.product-id{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #464646;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.product-price, .product-category, .product-name{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+.order-status{
+    width: 63px;
+    height: 24px;
+    background: #E4FFDE 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    color: #00CE07;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order-status-pending{
+    width: 63px;
+    height: 24px;
+    background: #FFF2F3 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    color: #F25B6A;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start-img{
+    width: 22px;
+    height: 22px;
+    margin: 4px;
+}
+.ratingnumber{
+    // width: 10px;
+    height: 24px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.rating5{
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #D6D6D6;
+    text-transform: uppercase;
+}
+.rating-info{
+    color: #ACACAC;
+    font-size: 12px;
+    font-weight: 400;
+}
+.rating-status{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+}
+.rating{
+    margin-top: 30px ;
+    margin-bottom: 10px;
+}
+.all-reviews-btn{
+    width: 166px;
+    height: 36px;
+    background: #E8F0FF 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    font-size: 12px;
+    border: none;
+}
+.all-reviews-btn:hover{
+    background-color: #E8F0FF ;
+    border-color: none;
+}
+.progress{
+    width: 210px;
+    height: 15px;
+    background: #E5E5E5 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+}
+.excellent-bar{
+    background: #00CE07 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+}
+.good-bar{
+    background: #1E00BB 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+}
+.avg-bar{
+    background: #00D3FF 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+}
+.below-avg-bar{
+    background: #FEB306 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+}
+.poor-bar{
+    background: #E9152B 0% 0% no-repeat padding-box;
+    border-radius: 50px;
 }
