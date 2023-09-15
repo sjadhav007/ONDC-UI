@@ -60,8 +60,8 @@ export class HeaderComponent implements OnInit{
     // this.router.navigate(['/dashboard/notifications'])
     const dialogRef=this.dialog.open(NotificationsComponent, {
       hasBackdrop: true,
-      width:'20%',
-      position: { right: '350px', top: '50px', },
+      width:'25%',
+      position: { right: '295px', top: '50px', },
       backdropClass: 'cdk-overlay-transparent-backdrop',
       // panelClass: '',
 

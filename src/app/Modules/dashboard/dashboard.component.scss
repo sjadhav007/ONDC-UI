@@ -14,12 +14,14 @@
     left: 60px !important;
     position:absolute;
     padding-top: 55px;
+    overflow-x: hidden;
   }
   
   .mainContent-expand {
     padding-top: 55px;
     padding-left: 210px;
     width: 100%;
+    overflow-x: hidden;
   }
 .header {
     left: 60px;
