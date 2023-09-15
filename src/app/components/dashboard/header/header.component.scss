@@ -1,11 +1,33 @@
-.header {
-    border-bottom: 1px solid #CBC9CF;
+.header{
+    left: 53px !important;
+    width: calc(100% - 53px) !important;
+  }
+  .header-expand {
+    left: 200px !important;
+    width: calc(100% - 200px) !important;
+  }
+.header-card{
+    border-bottom: 1px solid #DCDCDC !important;
 }
-
-.header-div {
-    height: 45px;
-}
-
+// .header-div {
+//     height: 45px;
+//     background: #FFFFFF 0% 0% no-repeat padding-box;
+//     border-bottom: 1px solid #DCDCDC;
+//     opacity: 1;
+// }
+::ng-deep{
+    .mat-mdc-card{
+      box-shadow: none !important;
+    }
+  }
+  .mat-mdc-card{
+        padding: 8px 5px;
+        position: fixed;
+        top: 0px;
+        z-index: 100;
+        border-radius: 0px;
+        width: 100%;
+      }
 .addproduct {
     width: auto;
     height: 36px;

@@ -1,17 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { NotificationsComponent } from '../notifications/notifications.component';
+import { SharedService } from 'src/app/Services/shared.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
   showTab: number =1;
-  constructor(private router:Router, private dialog:MatDialog){
+  collapseSidebar: boolean =false;
+  constructor(private router:Router, private dialog:MatDialog,private sharedService:SharedService){
     
+  }
+
+  ngOnInit(): void {
+    this.sharedService.getToggle().subscribe(data => {
+      if (data) {
+       this.collapseSidebar=!this.collapseSidebar
+      }
+    }
+    )
   }
   addProduct(){
     this.router.navigate(['/dashboard/addProduct'])

@@ -1,60 +1,60 @@
-<div class="container-fluid">
-    <div class="heading mt-2">Add Product</div>
+<div class="container-fluid m-3">
+    <div class="heading">Add Product</div>
 <div class="addproduct">
     <form [formGroup]="addProductForm">
         <div class="row p-3">
             <div class="col-lg-7 col-md-8">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">Product ID<span class="required">*</span></label>
-                        <input type="text" class="form-control" formControlName="productId">
+                        <input type="text" class="form-control" formControlName="productId" placeholder="Enter ProductID">
                         <div *ngIf="p['productId'].errors && (p['productId'].touched)" 
                         class="error-message" >
                           <div *ngIf="p['productId'].errors['required']" >
                             Product ID cannot be blank</div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">Max Retail Price(MRP)<span class="required">*</span></label>
-                        <input type="text" class="form-control" formControlName="MRP" (keypress)="numberOnly($event)">
+                        <input type="text" class="form-control" formControlName="MRP" placeholder="Enter MRP">
                         <div *ngIf="p['MRP'].errors && (p['MRP'].touched)" 
                         class="error-message" >
                           <div *ngIf="p['MRP'].errors['required']" >
                             MRP cannot be blank</div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">Product Name<span class="required">*</span></label>
-                        <input type="text" class="form-control" formControlName="productName">
+                        <input type="text" class="form-control" formControlName="productName" placeholder="Enter Product Name">
                         <div *ngIf="p['productName'].errors && (p['productName'].touched)" 
                         class="error-message" >
                           <div *ngIf="p['productName'].errors['required']" >
                             Product Name cannot be blank</div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">Sales Price<span class="required">*</span></label>
-                        <input type="text" class="form-control" formControlName="salePrice" (keypress)="numberOnly($event)">
+                        <input type="text" class="form-control" formControlName="salePrice" placeholder="Enter Sales Price">
                         <div *ngIf="p['salePrice'].errors && (p['salePrice'].touched)" 
                         class="error-message" >
                           <div *ngIf="p['salePrice'].errors['required']" >
                             Sales Price cannot be blank</div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">Product Category<span class="required">*</span></label>
-                        <input type="text" class="form-control" formControlName="productCategory">
+                        <input type="text" class="form-control" formControlName="productCategory" placeholder="Enter Product Category">
                         <div *ngIf="p['productCategory'].errors && (p['productCategory'].touched)" 
                         class="error-message" >
                           <div *ngIf="p['productCategory'].errors['required']" >
                             Product Category cannot be blank</div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">Discount</label>
-                        <input type="text" class="form-control" formControlName="discount" (keypress)="numberOnly($event)">
+                        <input type="text" class="form-control" formControlName="discount"  placeholder="Enter Discount">
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">Status<span class="required">*</span></label>
                         <select class="form-select" formControlName="status">
                             <option  value="live">Live</option>
@@ -66,16 +66,16 @@
                             Status cannot be blank</div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">No.of Units<span class="required">*</span></label>
-                        <input type="text" class="form-control" formControlName="units" (keypress)="numberOnly($event)">
+                        <input type="text" class="form-control" formControlName="units" placeholder="Enter No.Of Units">
                         <div *ngIf="p['units'].errors && (p['units'].touched)" 
                         class="error-message" >
                           <div *ngIf="p['units'].errors['required']" >
                             No.of Units cannot be blank</div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-2">
                         <label class="form-label label">Creation Date<span class="required">*</span></label>
                         <input type="text" class="form-control" formControlName="creationDate" readonly>
                     </div>

@@ -9,6 +9,7 @@ import { NotificationsComponent } from 'src/app/components/dashboard/notificatio
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddProductComponent } from 'src/app/components/dashboard/add-product/add-product.component';
 import { HomeComponent } from 'src/app/components/dashboard/home/home.component';
+import { SidebarComponent } from 'src/app/components/dashboard/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HomeComponent } from 'src/app/components/dashboard/home/home.component'
     AddProductComponent,
     NotificationsComponent,
     HomeComponent,
+    SidebarComponent,
   ],
   imports: [
     CommonModule,

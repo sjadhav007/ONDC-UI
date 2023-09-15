@@ -42,7 +42,6 @@ export class AddProductComponent implements OnInit{
  }
 
  fileUpload(event:any){
-  debugger
   let files = event.target.files;
   let file;
   for (let i=0; i<files.length ; i++){

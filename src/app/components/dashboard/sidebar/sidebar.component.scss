@@ -1,0 +1,143 @@
+.ds {
+    display: block;
+    // padding-left: 11px;
+    // padding-top: 12px;
+    // padding-bottom: 5px;
+  }
+  
+  .ms {
+    display: none;
+  }
+  .icon-bar1 {
+    width: 30px;
+    height: 1px;
+    display: block;
+    margin: 6px 0px;
+    cursor: pointer;
+    background: #FFFFFF;
+  }
+  .icon-bar2 {
+    width: 20px;
+    height: 1px;
+    display: block;
+    margin: 6px 0px;
+    cursor: pointer;
+    background: #FFFFFF;
+  }
+  .icon-bar3 {
+    width: 12px;
+    height: 1px;
+    display: block;
+    margin: 6px 0px;
+    cursor: pointer;
+    background: #FFFFFF;
+  }
+  
+  .toggleIcon {
+    border: none;
+    background: #F14C44;
+    width: 53px;
+    height: 45px;
+  }
+  
+  .sidebarMenu {
+    min-height: 130vh;
+    max-height: 170vh;
+    // box-shadow: 1px 1px 5px 0px lightgrey;
+    
+  
+    .sideMenuList {
+      padding: 0px;
+      width: 100%;
+      margin: 0px;
+  
+      .menuRow {
+        // margin: 5px 0;
+        // padding: 10px 0px 5px 6px;
+        padding: 5px 0 5px 5px;
+        transition: all .2s linear;
+        // @include transition($transition-set2);
+  
+        &.user-image {
+          img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+          }
+        }
+  
+        a {
+          // padding: 7px 0px 8px 40px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          color: #000000;
+          text-decoration: none;
+          font-size: 14px;
+          padding-block: 10px;
+        //   padding-left: 7px;
+          // margin-left: 13px;
+  
+  
+  
+          &::after {
+            right: auto;
+          }
+  
+          &::before {
+            // @extend %absolute-basic;
+            content: "";
+            left: auto;
+            width: 10px;
+            height: 10px;
+            right: 7px;
+            // @include transform(rotate(45deg));
+            // border: $border-set3;
+            border-width: 2px 2px 0 0;
+          }
+  
+        }
+  
+        &.collapse-btn {
+          padding: 0 15px 0 11px;
+        }
+      }
+    }
+  }
+.menuRow {
+    position: relative;
+    cursor: pointer;
+    &:hover .ctooltip{
+      display: block;
+      margin-left: 12px;
+    }
+}
+.ctooltip{
+    position: absolute;
+      left: 42px;
+      top: 10px;
+      background-color: black;
+      border: 5px solid black;
+      color: white;
+      width: auto;
+      padding: 2px 8px;
+      display: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 12px;
+  }
+  .iconsize,.iconsizeactive{
+    width: 22px;
+  }
+  .icontext {
+    margin-left: 10px
+  }
+  .sidebar-div{
+    background: #F14C44;
+  }
+  .ondc-text{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
